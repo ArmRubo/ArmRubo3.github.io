@@ -1,0 +1,321 @@
+@import url('https://fonts.cdnfonts.com/css/menlo');
+                
+*{
+    padding: 0; margin: 0;
+    border: none; outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Menlo', sans-serif;
+    transition: all .5s ease;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --light-gray: #f1f1f1;
+    --gray: #f0e0f0;
+    --gray1: #666;
+    --gray2: #333;
+    --red: #f00;
+    --yellow: #ff0;
+    --orange: #ff4500;
+    --blueviolet: #001a5f;
+    --magenta: #8b008b;
+    --light-blue: #8080ff;
+    --blue: #0000ff;
+    --light-green: #00ff00;
+    --light-green1: #90ff90;
+    --green: #109909;
+}
+
+body {
+    background-image: url(./images/cosmos.jpg);
+    z-index: -1000;
+}
+
+.heading {
+    position: relative;
+    color: var(--green);
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    background: linear-gradient(90deg, var(--gray), var(--light-gray), var(--yellow),
+    var(--orange), var(--red), var(--light-blue), var(--blue), var(--blueviolet), var(--magenta));
+}
+
+button {
+    position: absolute;
+    font-size: 1.4rem;
+    background: var(--gray2);
+    color: var(--white);
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+    left: 12rem; top: 8rem;
+}
+
+button:hover {
+    background: var(--gray1);
+    color: var(--gray);
+}
+
+
+/* ====================INDEX.HTML==================== */
+
+
+.content {
+    position: relative;
+    width: 35%;
+    height: 38rem;
+    border-radius: 3rem;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--gray), var(--light-gray), var(--yellow), var(--orange),
+    var(--yellow), var(--light-gray), var(--gray));
+}
+
+.content h3 {
+    position: relative;
+    font-size: 1.9rem;
+    color: var(--light-blue);
+    border-radius: 3rem;
+    text-align: center;
+    top: .5rem; left: -1.5rem;
+}
+
+.content h3 img {
+    position: absolute;
+    width: 2.5rem;
+    right: 7rem; top: -.3rem;
+}
+
+.content form {
+    position: relative;
+}
+
+.content form input {
+    display: list-item;
+}
+
+.content form .input {
+    position: relative;
+    border: 2px solid var(--gray);
+    border-radius: .6rem;
+    padding: .4rem 8rem .4rem .5rem;
+    width: 33rem;
+    margin-top: 5rem;
+    left: .3rem;
+    font-size: 1rem;
+}
+
+.content form .input:focus {
+    border: 2px solid var(--gray1);
+}
+
+.content form .nd {
+    margin-top: 2.5rem;
+}
+
+.content form button {
+    position: absolute;
+    font-size: 1.4rem;
+    background: var(--gray2);
+    color: var(--white);
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+    left: 12rem; top: 8rem;
+}
+
+.content form button:hover {
+    background: var(--gray1);
+    color: var(--gray);
+}
+
+.content span {
+    position: relative;
+    left: 4rem; top: 1rem;
+}
+
+.content span input {
+    position: absolute;
+    width: 1.1rem;
+    height: 1.1rem;
+    left: -1.5rem;
+}
+
+.content span pre {
+    top: -.5rem;
+}
+
+.content .forgot {
+    position: relative;
+    font-size: 1.4rem;
+    left: 9rem; top: 25%;
+    color: var(--gray1);
+}
+
+.content .forgot a{
+    color: var(--green);
+    font-size: 1.2rem;
+}
+
+.content .forgot a:hover {
+    font-size: 1.4rem;
+    text-decoration: underline var(--blue);
+}
+
+.content .sign {
+    position: absolute;
+    font-size: 1.4rem;
+    top: 28rem; left: 13.5rem;
+    color: var(--light-green);
+    -webkit-text-stroke: .6px var(--black);
+}
+
+.content .sign:hover {
+    color: var(--light-green1);
+    text-decoration: underline;
+}
+
+
+/* -=-=-=-=-=-=-=-=-=-=INDEX1.HTML=-=-=-=-=-=-=-=-=-=- */
+
+
+.content .form1 .input {
+    position: relative;
+    border: 2px solid var(--gray);
+    border-radius: .6rem;
+    padding: .4rem 8rem .4rem .5rem;
+    width: 33rem;
+    margin-top: 2rem;
+    left: .3rem;
+    font-size: 1rem;
+}
+
+.content .form1 p {
+    position: relative;
+    color: var(--red);
+    background: rgba(0, 0, 0, .7);
+    top: .5rem;
+    padding-left: 1rem;
+    -webkit-text-stroke: .2px var(--light-green);
+}
+
+.content .form1 .robot {
+    position: relative;
+    top: 1.5rem; left: .5rem;
+    background: var(--gray);
+    width: 80%;
+    padding: .2rem .5rem;
+    border-radius: 1rem;
+    border: 2px solid #333;
+}
+
+.content .form1 .robot .blockdiv {
+    position: absolute;
+    z-index: 10;
+    top: 0; left: -.15rem;
+    background: rgba(0, 0, 0, .2);
+    width: 430px;
+    height: 50px;
+    padding: .2rem .5rem;
+    border-radius: 1rem;
+    display: none;
+}
+
+.content .form1 .robot .loading {
+    position: relative;
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: .6rem;
+}
+
+.content .form1 .robot input {
+    position: relative;
+    left: .1rem; top: .6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.content .form1 .robot span {
+    position: relative;
+    left: 2.1rem; top: -.9rem;
+    font-size: 1.1rem;
+}
+
+.content .form1 .robot span i {
+    position: relative;
+    color: var(--blue);
+    font-size: 1.5rem;
+    top: .1rem;
+}
+
+.content .form1 button {
+    top: 27rem;
+}
+
+.content .form1 button a {
+    color: var(--white);
+}
+
+
+/* -=-=-=-=-=-=-=-=-=-=INDEX2.HTML=-=-=-=-=-=-=-=-=-=- */
+
+
+.content .form2 .input {
+    position: relative;
+    border: 2px solid var(--gray);
+    border-radius: .6rem;
+    padding: .4rem 8rem .4rem .5rem;
+    width: 22rem;
+    margin-top: 4rem;
+    left: 11.3rem;
+    font-size: 1rem;
+}
+
+.content .form2 select {
+    position: relative;
+    width: 10rem;
+    height: 2rem;
+    top: 6rem; left: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background: var(--gray);
+    padding: .3rem .6rem;
+}
+
+.content .form2 select option {
+    font-size: 1.1rem;
+    border: 1px solid var(--gray2);
+}
+
+.content .form2 button {
+    top: 10rem; left: 10rem;
+}
+
+.content .form2 button a {
+    color: var(--white);
+}
+
+
+/* -=-=-=-=-=-=-=-=-=-INDEX3.HTML-=-=-=-=-=-=-=-=-=- */
+
+
+.content .form3 span {
+    position: relative;
+    background: rgba(0, 0, 0, .5);
+    color: var(--red);
+    top: 3rem; left: 1rem;
+    padding: .4rem;
+    font-size: 1.2rem;
+}
+
+.content .form3 button {
+    top: 10rem;
+}
+
+.content .form3 button a {
+    color: var(--white);
+}
